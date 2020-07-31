@@ -1,0 +1,218 @@
+#contact{
+    font-family: 'merienda one';
+
+    .contact-head{
+        text-transform: uppercase;
+        font-size: 2rem;
+        letter-spacing: -0.2rem;
+        text-align: center;
+
+        span{
+            color: $primary;
+            text-shadow: 0 0 1rem $primary;
+
+            &:nth-child(1){animation: blink 2s ease infinite 0s;}
+            &:nth-child(2){animation: blink 2s ease infinite 0.5s;}
+            &:nth-child(3){animation: blink 2s ease infinite 1s;}
+            &:nth-child(4){animation: blink 2s ease infinite 1.5s;}
+        }
+    }
+
+    h2{
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 1.5rem;
+        text-transform: capitalize;
+    }
+
+    .social-med{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 1rem;
+
+        @media (max-width: 950px){
+            border-left: 0.1rem solid $primary;
+            border-right: 0.1rem solid $primary;
+        }
+
+        .soc-logo{
+            width: 4%;
+            margin: 1rem;
+            border-radius: 1rem;
+            .fa{
+                text-decoration: none;
+                color: $primary;
+                font-size: 2rem;
+                padding: 0.1rem;
+                border-radius: 0.5rem;
+                transition: all 0.5s ease;
+
+                &:nth-child(1){animation: blink 2.5s ease infinite 0s;}
+                &:nth-child(2){animation: blink 2.5s ease infinite 0.5s;}
+                &:nth-child(3){animation: blink 2.5s ease infinite 1s;}
+                &:nth-child(4){animation: blink 2.5s ease infinite 1.5s;}
+                &:nth-child(5){animation: blink 2.5s ease infinite 2s;}
+            }
+
+            .fa:hover{
+                color: $off-black;
+                background-color: $primary;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .social-med::before{
+        content: '';
+        position: absolute;
+        width: 30%;
+        left: 1rem;
+        top: 50%;
+        transform: translate(0, -50%);
+        height: 0.1rem;
+        background-color: $primary;
+        box-shadow:  0 0 1rem $primary, 0 0 2rem $primary;
+
+        @media (max-width: 950px){
+            top: 0;
+            width: 50%;
+            left: 0;
+        }
+    }
+
+    .social-med::after{
+        content: '';
+        position: absolute;
+        width: 30%;
+        right: 1rem;
+        top: 50%;
+        transform: translate(0, -50%);
+        height: 0.1rem;
+        box-shadow:  0 0 1rem $primary, 0 0 2rem $primary;
+        background-color: $primary;
+
+        @media (max-width: 950px){
+            top: 100%;
+            width: 50%;
+            right: 0;
+        }
+    }
+
+        
+    .contact-form{
+        padding: 1rem;
+        width: 50%;
+        margin: 2rem auto;
+        text-align: center;
+
+        @media (max-width: 950px){
+            width: 70%;
+        }
+
+        @media (max-width: 600px){
+            width: 90%;
+        }
+
+        @media (max-width: 400px){
+            width: 100%;
+        }
+        
+        .input-container{
+            margin: 1rem;
+            position: relative;
+
+            .label{
+                font-size: 1rem; 
+                color: $primary;
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                transform: translate(10%,2%);
+                transition: all 0.6s ease;
+
+                @media (max-width: 650px){
+                    position: static;
+                }
+            }
+            .label.active{
+                transform: translate(-110%, 0);
+            }
+            .input{ 
+                border: none; 
+                background-color: $off-black; 
+                color: $primary;
+                font-size: 1rem;
+                padding: 1rem;
+                width: 100%;
+                border-bottom: 0.2rem solid $primary;
+                border-radius: 0.5rem;
+
+                @media (max-width: 650px){
+                    margin: 0.5rem;
+                }
+            }
+
+            .input:focus{
+                box-shadow: 0 0 1rem $primary;
+            }
+        }
+
+
+        .message-container{
+            margin: 1rem;
+            position: relative;
+            height: 20rem;
+            
+            .message{
+                border: none; 
+                resize: none; 
+                padding: 1rem;
+                color: $primary; 
+                background-color: $off-black;
+                width: 100%;
+                height: 100%;
+                font-size: 1.3rem;
+                border-bottom: 0.2rem solid rgba($primary, 0.6);
+                border-radius: 0.5rem;
+
+                @media (max-width: 650px){
+                    margin: 0.5rem;
+                }
+            }
+
+            .message:focus{
+                box-shadow: 0 0 1rem $primary;
+            }
+
+            .message::-webkit-scrollbar{
+                display: none;
+            }
+        }
+        
+
+        .submit-btn{
+            padding: 0.5rem 1rem;
+            border: none;
+            font-size: 1rem;
+            background-color: $primary;
+            color: $white;
+            font-family: 'merienda one';
+            transition: all 0.5s ease;
+            border-radius: 1rem;
+            margin: 1rem;
+
+            @media (max-width: 650px){
+                margin: 2.5rem;
+            }
+        }
+
+        .submit-btn:hover{
+            cursor: pointer;
+            transform: scale(1.2) translateY(-0.5rem);
+        }
+
+    }
+}

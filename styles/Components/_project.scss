@@ -1,0 +1,108 @@
+#project{
+    font-family: 'merienda one';
+
+    .project-head{
+        font-size: 2rem; 
+        text-align: center;
+        border-top: 0.1rem solid $white;
+        border-bottom: 0.1rem solid $white;
+        width: 80%;
+        margin: 2rem auto;
+        padding: 0.6rem;
+        text-transform: capitalize;
+    }
+
+    .cards-cont{
+        display: flex;
+        @media(max-width: 950px){flex-direction: column;}
+        .card-group{
+            display: flex;
+            @media (min-width: 1800px){width: 33%;}
+            @media (max-width: 1800px){flex-direction: column; width: 33%;}
+            @media(max-width: 950px){flex-direction: row; width: 100%;}
+            @media(max-width: 650px){flex-direction: column;}
+
+            .card::-webkit-scrollbar{
+                display: none;
+            }
+            .card{
+                border: 0.1rem solid white;
+                margin: 0.5rem;
+                height: 12rem;
+                overflow: scroll;
+                padding: 0.5rem;
+                @media (min-width: 1800px){width: 50%;}
+                @media (max-width: 1800px){width: 100%;}
+                @media(max-width: 950px){width: 50%;}
+                @media(max-width: 650px){width: 100%;}
+
+                
+                .description{
+                    .heading{
+                        text-align: center;
+                        font-size: 1.2rem;
+                    }
+                    .details{
+                        color: $off-white;
+                        border: 0.1rem solid grey;
+                        margin: 0.5rem;
+                        text-align: justify;
+                        height: 6rem;
+                        overflow: scroll;
+                        padding: 0.5rem;
+                        font-size: 0.7rem;
+                    }
+                    .details::-webkit-scrollbar{
+                        display: none;
+                    }
+
+                    .link-cont{
+                        border-bottom: 0.1rem solid $primary;
+                        margin: 1rem;
+                        padding: 0.5rem;
+                        .link{
+                            margin: 0.4rem;
+                            .link-a{
+                                text-decoration: none; 
+                                color: $primary;
+                                font-size: 0.8rem;
+                                transition: all 0.5s ease;
+                            }
+                            .link-a:hover{
+                                text-shadow: 0 0 1rem $primary;
+                            }
+                        }
+
+                    }
+                    .tags{
+                        margin: 0.5rem;
+                        .tag-head{
+                            color: $primary;
+                            margin: 0.4rem;
+                        }
+                        .tag-list{
+                            list-style: none;
+                            display: flex;
+                            
+                            .tag{ 
+                                color: $primary;
+                                padding: 0.2rem;
+                                border: 0.1rem solid $primary;
+                                transition: all 0.5s ease;
+                            }
+                            .tag:not(:last-child){
+                                margin-right: 0.5rem;
+                            }
+                            .tag:hover{
+                                background-color: $primary;
+                                color: $off-black;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@keyframes harmonic{
+    0%{transform: translateY(0);}
+    25%{transform: translateY(0.2rem);}
+    50%{transform: translateY(0);}
+    75%{transform: translateY(-0.2rem);}
+    100%{transform: translateY(0);}
+}
+
+@keyframes flipsF {
+    0%{transform: translate(-50%, -50%) rotateY(360deg);}
+    50%{transform: translate(-50%, -50%) rotateY(180deg);}
+    100%{transform: translate(-50%, -50%) rotateY(0deg);}
+}
+
+@keyframes flipsB {
+    0%{transform: translate(-50%, -50%) rotateY(180deg);}
+    50%{transform: translate(-50%, -50%) rotateY(0);}
+    100%{transform: translate(-50%, -50%) rotateY(-180deg);}
+}
+
+@keyframes shownames {
+    0%{content: "Programmer";}
+    25%{content: "Student";}
+    50%{content: "Physics Lover";}
+    75%{content: "Chess freak";}
+    100%{content: "Programmer";}
+}
+
+@keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}

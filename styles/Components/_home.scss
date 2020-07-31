@@ -1,0 +1,250 @@
+#home{
+    font-family: 'merienda one';
+    background: url('../../Media/star.jpg');
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0% 1%, 100% 0%, 100% 96%, 54% 96%, 50% 100%, 46% 96%, 0 96%);
+    
+    .main-cont{    
+        display: flex;
+        width: 100%;
+        padding: 5rem;
+
+        @media (max-width: 920px){
+            padding: 2rem;
+        }
+
+        @media (max-width: 730px){
+            flex-direction: column;
+            text-align: center;
+        }
+
+        @media (max-width: 510px){
+            padding: 0;
+            text-align: left;
+        }
+
+
+        .home-text{
+            padding: 3rem 0.5rem;
+            
+            @media (max-width: 730px){
+                border-bottom: 0.2rem solid $primary;
+                margin: 3rem;
+            }
+            
+            @media (max-width: 510px){
+                margin: 2rem 0.5rem;
+            }
+
+            .name{
+                font-size: 3rem;
+                margin: 1rem;
+                text-shadow: 0 0 1rem $off-white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media (max-width: 920px){
+                    font-size: 2.3rem;
+                }
+
+                @media (max-width: 420px){
+                    font-size: 2rem;
+                }
+
+                @media (max-width: 370px){
+                    font-size: 1.5rem;
+                }
+
+                @media (max-width: 300px){
+                    display: initial;
+                }
+
+                :nth-child(1){  animation: colorwave 1.9s ease infinite 0s;}
+                :nth-child(2){  animation: colorwave 1.9s ease infinite .1s;}
+                :nth-child(3){  animation: colorwave 1.9s ease infinite .2s;}
+                :nth-child(4){  animation: colorwave 1.9s ease infinite .3s;}
+                :nth-child(5){  animation: colorwave 1.9s ease infinite .4s;}
+                :nth-child(6){  animation: colorwave 1.9s ease infinite .5s;}
+                :nth-child(7){  animation: colorwave 1.9s ease infinite .6s;}
+                :nth-child(8){  animation: colorwave 1.9s ease infinite .7s;}
+                :nth-child(9){  animation: colorwave 1.9s ease infinite .8s;}
+                :nth-child(10){ animation: colorwave 1.9s ease infinite .9s;}
+                :nth-child(11){ animation: colorwave 1.9s ease infinite 1.0s;}
+                :nth-child(12){ animation: colorwave 1.9s ease infinite 1.1s;}
+                :nth-child(13){ animation: colorwave 1.9s ease infinite 1.2s;}
+                :nth-child(14){ animation: colorwave 1.9s ease infinite 1.3s;}
+                :nth-child(15){ animation: colorwave 1.9s ease infinite 1.4s;}
+                :nth-child(16){ animation: colorwave 1.9s ease infinite 1.5s;}
+                :nth-child(17){ animation: colorwave 1.9s ease infinite 1.6s;}
+                :nth-child(18){ animation: colorwave 1.9s ease infinite 1.7s;}
+                :nth-child(19){ animation: colorwave 1.9s ease infinite 1.8s;}
+
+                @keyframes colorwave{
+                    0%{color: rgba($off-white, 0.6);}
+                    50%{color: $primary;}
+                    100%{color: rgba($off-white, 0.6);}
+                }
+            }
+
+
+
+            .intro{
+                font-size: 2rem;
+                margin: 1rem;
+
+                @media (max-width: 920px){
+                    font-size: 1.7rem;
+                }
+
+                @media (max-width: 510px){
+                    font-size: 1.4rem;
+                }
+
+                @media (max-width: 370px){
+                    font-size: 1rem;
+                }
+            }
+
+            /*
+            .intro::after{
+                content: "";
+                color: $primary;
+                animation: shownames 8s ease infinite;
+            }
+            */
+
+            .checkprojects{
+                margin: 5rem auto 3rem auto;
+
+                .proj-link{
+                    text-decoration: none;
+                    border: 0.1rem solid $primary;
+                    color: $primary;
+                    padding: 1rem;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    border-bottom-left-radius: 1rem;
+                    border-top-right-radius: 1rem;
+                    transition: all 1s ease;
+
+                    @media (max-width: 510px){
+                        font-size: 1rem;
+                    }
+
+                    @media (max-width: 370px){
+                        font-size: 0.9rem;
+                    }
+                }
+                .proj-link:hover{
+                    color: $off-black;
+                    background-color: $primary;
+                }
+            }
+
+            .quote-pc{
+                font-size: 1rem;
+                margin: 6rem 0;
+
+                @media (max-width: 920px){
+                    display: none;
+                }
+            }
+        }
+
+        .image-card{
+            width: 25rem;
+            border: 0.3rem solid $primary;
+            padding: 0.5rem;
+            background-color: $black;
+            perspective: 90rem;
+            position: relative;
+            max-height: 25rem;
+            height: 25rem;
+            margin-left: auto;
+            border-radius: 1rem;
+
+            @media (max-width: 920px){
+                width: 15rem;
+                height: 15rem;
+                margin: auto;
+                border-radius: 50%;
+            }
+
+            @media (max-width: 510px){
+                width: 10rem;
+                height: 10rem;
+            }
+
+
+            .front-card{
+                width: 90%;
+                height: 90%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotateY(0);
+                transition: all 1s ease-in-out;
+                backface-visibility: hidden;
+                animation: flipsF 10s ease 1 forwards;
+                overflow: hidden;
+
+                @media (max-width: 920px){
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+
+            .back-card{
+                width: 90%;
+                height: 90%;
+                transition: all 1s ease-in-out;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotateY(180deg);
+                backface-visibility: hidden;
+                animation: flipsB 10s ease 1 forwards;
+                overflow: hidden;
+
+                @media (max-width: 920px){
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .quote-mob{
+        font-size: 1.4rem;
+        text-align: center;
+        display: none;
+        margin: 3rem 0;
+
+        span{color: $primary;}
+
+        @media (max-width: 920px){
+            display: block;
+            margin: 0;
+            padding: 1.6rem 0 3rem 0;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 730px){
+            font-size: 1rem;
+            padding: 1.3rem 0 3rem 0;
+            margin: 0;
+        }
+
+        @media (max-width: 510px){
+            font-size: 0.68rem;
+            padding: 1rem 0 3rem 0;
+            margin: 0;
+        }
+
+    }
+
+}
