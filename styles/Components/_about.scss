@@ -113,7 +113,10 @@
     }
 
     .color-sliders{
-        h2{text-align: center;}
+        h2{
+            text-align: center;
+            @media (max-width: 800px){font-size: 0.8rem;}
+        }
         .slider-cont{
             width: 50%;
             margin: 0.5rem auto;
