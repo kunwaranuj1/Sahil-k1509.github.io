@@ -94,7 +94,7 @@
                         <span>g</span>
                         <span>i</span>
                     </div>
-                    <div class="intro">I am a <span class="txt-rotate" style='color:rgb(0, 204, 153);' data-period="1000" data-rotate='[ "Programmer", "Student", "Physics Lover", "Chess Freak", "Keen Learner" ]'></span></div>
+                    <div class="intro">I am a <span class="txt-rotate" data-period="1000" data-rotate='[ "Programmer", "Student", "Physics Lover", "Chess Freak", "Keen Learner" ]'></span></div>
                     <div class="checkprojects"><a href="#project" class='proj-link'>Check out my projects</a></div>
 
                     <div class="quote-pc">“ Perfection is achieved not when there is nothing more to add, <br> but rather when there is nothing more to take away.” <br> – Antoine de Saint-Exupery</div>
@@ -128,11 +128,17 @@
                 <div class='skill-btn' id="ml">Machine Learning</div>
                 <div class='skill-btn' id="tech">Tools & Tech.</div>
             </div>
-            <div class="skills-cont">
+            <div class="skills-cont" id='skills-cont'>
                 <div class='skills-cloud active' id="skills-l"></div>
                 <div class='skills-cloud' id="skills-w"></div>
                 <div class='skills-cloud' id="skills-m"></div>
                 <div class='skills-cloud' id="skills-t"></div>
+            </div>
+            <div class="color-sliders">
+                <h2>Didn't like the cloud color? Customize it as per your will!</h2>
+                <div class="red-slider slider-cont"><input type="range" name="red" id="r-set" min="10" max="245" class='slider' value='0'></div>
+                <div class="green-slider  slider-cont"><input type="range" name="green" id="g-set" min="10" max="245" class='slider' value='204'></div>
+                <div class="blue-slider  slider-cont"><input type="range" name="blue" id="b-set" min="10" max="245" class='slider' value='153'></div>
             </div>
         </div>
 

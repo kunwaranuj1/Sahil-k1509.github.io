@@ -438,6 +438,7 @@ THE SOFTWARE.
 
                 entry.vector2D.x = entry.vectorPosition.x * scale + center2D.x; 
                 entry.vector2D.y = entry.vectorPosition.y * scale + center2D.y;
+
                 
                 //---
 
@@ -449,6 +450,11 @@ THE SOFTWARE.
                 }
 
                 //---
+
+                if (!entry.vector2D.x || !entry.vector2D.y ){
+                    entry.vector2D.x = 0;
+                    entry.vector2D.y = 0;
+                }
 
                 entry.element.setAttribute( 'x', entry.vector2D.x );
                 entry.element.setAttribute( 'y', entry.vector2D.y );
