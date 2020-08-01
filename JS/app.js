@@ -267,7 +267,7 @@ $(document).ready(function(){
     var themebtn = document.getElementById('theme-btn');
     var themeSelector = document.getElementById('theme-selector');
 
-    var body = document.querySelector('body');
+    var body = document.querySelector('html');
 
     $('#theme-btn').click(function(){
         themebtn.classList.add('shift');
@@ -287,6 +287,7 @@ $(document).ready(function(){
         body.classList.remove('red');
         body.classList.remove('blue');
         body.classList.remove('violet');
+
     });
 
     $('#red-th').click(function(){
