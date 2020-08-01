@@ -13,11 +13,63 @@
     background-color: $primary;
 }
 
+
 body{
     font-size: 62.5%;
     background-color: rgba(19, 19, 19, 0.979);
     color: $off-white;
+
+    .theme-btn{
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 999;
+        font-size: 1.5rem;
+        text-shadow: 0 0 1rem $white, 0 0 2rem $white;
+        transition: all ease 0.5s;
+    }
+    .theme-btn:hover{
+        cursor: pointer;
+    }
+
+    .theme-btn.shift{
+        transform: translateX(-200%);
+    }
+
+    .theme-selector{
+        font-family: 'merienda one';
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 9rem;
+        background-color: rgba($primary, 0.2);
+        border-bottom-right-radius: 5rem;
+        padding: 0.5rem;
+        overflow: hidden;
+        transform: translateX(-100%);
+        transition: all ease 0.5s;
+
+        h2{padding: 0.2rem 0;}
+
+        #close-theme{position: absolute; top: 0.1rem; right: 0.5rem; font-size: 2rem;}
+        #close-theme:hover{cursor: pointer;}
+
+        .choice{
+            font-size: 0.7rem;
+            padding: 0.3rem;
+        }
+        .choice:hover{
+            cursor: pointer;
+        }
+    }
+
+    .theme-selector.active{
+        transform: translateX(0);
+    }
 }
+
+
 
 ::-webkit-scrollbar {
     width: 0.7rem;
@@ -36,6 +88,10 @@ body{
 ::-webkit-scrollbar-thumb:hover {
     background: $primary;
 }
+
+
+
+
 
 @import './Animations/animation';
 
