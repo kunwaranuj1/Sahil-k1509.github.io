@@ -30,7 +30,6 @@
                 margin: 0.5rem;
                 height: 12rem;
                 overflow: scroll;
-                padding: 0.5rem;
                 @media (min-width: 1800px){width: 50%;}
                 @media (max-width: 1800px){width: 100%;}
                 @media(max-width: 950px){width: 50%;}
@@ -41,6 +40,10 @@
                     .heading{
                         text-align: center;
                         font-size: 1.2rem;
+                        position: sticky;
+                        top: 0;
+                        background-color: $off-black;
+                        padding: 0.5rem;
                     }
                     .details{
                         color: $off-white;

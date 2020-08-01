@@ -1736,8 +1736,8 @@ body {
 }
 
 #contact .contact-head span {
-  color: #00cc99;
-  text-shadow: 0 0 1rem #00cc99;
+  color: #eeeeee;
+  text-shadow: 0 0 1rem #eeeeee;
 }
 
 #contact .contact-head span:nth-child(1) {
@@ -2095,7 +2095,6 @@ body {
   margin: 0.5rem;
   height: 12rem;
   overflow: scroll;
-  padding: 0.5rem;
 }
 
 @media (min-width: 1800px) {
@@ -2125,6 +2124,11 @@ body {
 #project .cards-cont .card-group .card .description .heading {
   text-align: center;
   font-size: 1.2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #222222;
+  padding: 0.5rem;
 }
 
 #project .cards-cont .card-group .card .description .details {
