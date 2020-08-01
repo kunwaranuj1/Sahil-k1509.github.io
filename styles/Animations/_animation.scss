@@ -19,11 +19,110 @@
 }
 
 @keyframes shownames {
-    0%{content: "Programmer";}
-    25%{content: "Student";}
-    50%{content: "Physics Lover";}
-    75%{content: "Chess freak";}
-    100%{content: "Programmer";}
+    0%{content: "|";}
+    1%{content: "P|";}
+    2%{content: "Pr|";}
+    3%{content: "Pro|";}
+    4%{content: "Prog|";}
+    5%{content: "Progr|";}
+    6%{content: "Progra|";}
+    7%{content: "Program|";}
+    8%{content: "Programm|";}
+    9%{content: "Programme|";}
+    10%{content: "Programmer|";}
+    11%{content: "Programmer|";}
+    12%{content: "Programmer|";}
+    13%{content: "Programmer|";}
+    14%{content: "Programmer|";}
+    15%{content: "Programme|";}
+    16%{content: "Programm|";}
+    17%{content: "Program|";}
+    18%{content: "Progra|";}
+    19%{content: "Progr|";}
+    20%{content: "Prog|";}
+    21%{content: "Pro|";}
+    22%{content: "Pr|";}
+    23%{content: "P|";}
+    24%{content: "|";}
+
+    25%{content: "S|";}
+    26%{content: "St|";}
+    27%{content: "Stu|";}
+    28%{content: "Stud|";}
+    29%{content: "Stude|";}
+    30%{content: "Studen|";}
+    31%{content: "Student|";}
+    32%{content: "Student|";}
+    33%{content: "Student|";}
+    34%{content: "Student|";}
+    35%{content: "Student|";}
+    36%{content: "Student|";}
+    37%{content: "Student|";}
+    38%{content: "Student|";}
+    39%{content: "Student|";}
+    40%{content: "Student|";}
+    41%{content: "Student|";}
+    42%{content: "Student|";}
+    43%{content: "Studen|";}
+    44%{content: "Stude|";}
+    45%{content: "Stud|";}
+    46%{content: "Stu|";}
+    47%{content: "St|";}
+    48%{content: "S|";}
+    49%{content: "|";}
+
+    50%{content: "P|";}
+    51%{content: "Ph|";}
+    52%{content: "Phy|";}
+    53%{content: "Phys|";}
+    54%{content: "Physi|";}
+    55%{content: "Physic|";}
+    56%{content: "Physics |";}
+    57%{content: "Physics L|";}
+    58%{content: "Physics Lo|";}
+    59%{content: "Physics Lov|";}
+    60%{content: "Physics Love|";}
+    61%{content: "Physics Lover|";}
+    62%{content: "Physics Lover|";}
+    63%{content: "Physics Love|";}
+    64%{content: "Physics Lov|";}
+    65%{content: "Physics Lo|";}
+    66%{content: "Physics L|";}
+    67%{content: "Physics|";}
+    68%{content: "Physic|";}
+    69%{content: "Physi|";}
+    70%{content: "Phys|";}
+    71%{content: "Phy|";}
+    72%{content: "Ph|";}
+    73%{content: "P|";}
+    74%{content: "|";}
+    
+    75%{content: "C|";}
+    76%{content: "Ch|";}
+    77%{content: "Che|";}
+    78%{content: "Ches|";}
+    79%{content: "Chess|";}
+    80%{content: "Chess f|";}
+    81%{content: "Chess fr|";}
+    82%{content: "Chess fre|";}
+    83%{content: "Chess frea|";}
+    84%{content: "Chess freak|";}
+    85%{content: "Chess freak|";}
+    86%{content: "Chess freak|";}
+    87%{content: "Chess freak|";}
+    88%{content: "Chess freak|";}
+    89%{content: "Chess freak|";}
+    90%{content: "Chess freak|";}
+    91%{content: "Chess frea|";}
+    92%{content: "Chess fre|";}
+    93%{content: "Chess fr|";}
+    94%{content: "Chess f|";}
+    95%{content: "Chess|";}
+    96%{content: "Ches|";}
+    97%{content: "Che|";}
+    98%{content: "Ch|";}
+    99%{content: "C|";}
+    100%{content: "|";}
 }
 
 @keyframes blink{
