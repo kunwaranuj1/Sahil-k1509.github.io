@@ -1,0 +1,15 @@
+html{
+    @import './theme4';
+}
+
+html.red{
+    @import './theme2';   
+}
+
+html.blue{
+    @import './theme1';   
+}
+
+html.violet{
+    @import './theme3';   
+}
