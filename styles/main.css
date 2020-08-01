@@ -1738,26 +1738,12 @@ body {
 #contact .contact-head span {
   color: #eeeeee;
   text-shadow: 0 0 1rem #eeeeee;
-}
-
-#contact .contact-head span:nth-child(1) {
-  -webkit-animation: blink 2s ease infinite 0s;
-          animation: blink 2s ease infinite 0s;
-}
-
-#contact .contact-head span:nth-child(2) {
-  -webkit-animation: blink 2s ease infinite 0.5s;
-          animation: blink 2s ease infinite 0.5s;
-}
-
-#contact .contact-head span:nth-child(3) {
-  -webkit-animation: blink 2s ease infinite 1s;
-          animation: blink 2s ease infinite 1s;
-}
-
-#contact .contact-head span:nth-child(4) {
-  -webkit-animation: blink 2s ease infinite 1.5s;
-          animation: blink 2s ease infinite 1.5s;
+  /*
+            &:nth-child(1){animation: blink 2s ease infinite 0s;}
+            &:nth-child(2){animation: blink 2s ease infinite 0.5s;}
+            &:nth-child(3){animation: blink 2s ease infinite 1s;}
+            &:nth-child(4){animation: blink 2s ease infinite 1.5s;}
+            */
 }
 
 #contact h2 {
