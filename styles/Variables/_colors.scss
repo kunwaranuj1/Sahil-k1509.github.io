@@ -1,8 +1,8 @@
-$white : #fff;
-$off-white : #eeeeee;
+$white: #fff;
+$off-white: #eeeeee;
 
-$black : rgb(0,0,0);
-$off-black : rgb(34, 34, 34);
+$black: rgb(0, 0, 0);
+$off-black: rgb(34, 34, 34);
 
-$primary : rgb(0, 190, 204);
-
+$primary: var(--color-primary);
+$primaryrgba: var(--color-primary-rgba);

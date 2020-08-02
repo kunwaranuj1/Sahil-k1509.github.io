@@ -116,6 +116,8 @@ $(document).ready(function(){
 
     rval.oninput = function(){
         color = `rgb(${this.value}, ${gval.value}, ${bval.value})`;
+        document.documentElement.style.setProperty('--color-primary',color);
+        document.documentElement.style.setProperty('--color-primaryrgba',`${this.value}, ${gval.value}, ${bval.value}`);
         
         settingsL =  { entries: entriesL, width: '100%',  height: '100%', radius: '80%', radiusMin: 75, bgDraw: true, bgColor: 'rgba(19, 19, 19, 0.979)', opacityOver: 1.00, opacityOut: 0.05, opacitySpeed: 6, fov: 800, speed: 0.4, fontFamily: 'merienda one, Courier, sans-serif', fontsize: '1.1rem', fontColor: color, fontWeight: '600', fontToUppercase: true, fontStyle: 'normal', fontStretch: 'normal' };
         settingsW =  { entries: entriesW, width: '100%',  height: '100%', radius: '80%', radiusMin: 75, bgDraw: true, bgColor: 'rgba(19, 19, 19, 0.979)', opacityOver: 1.00, opacityOut: 0.05, opacitySpeed: 6, fov: 800, speed: 0.4, fontFamily: 'merienda one, Courier, sans-serif', fontsize: '1.1rem', fontColor: color, fontWeight: '600', fontToUppercase: true, fontStyle: 'normal', fontStretch: 'normal' };
@@ -158,6 +160,8 @@ $(document).ready(function(){
 
     gval.oninput = function(){
         color = `rgb(${rval.value}, ${this.value}, ${bval.value})`;
+        document.documentElement.style.setProperty('--color-primary',color);
+        document.documentElement.style.setProperty('--color-primaryrgba',`${rval.value}, ${this.value}, ${bval.value}`);
             
         settingsL =  { entries: entriesL, width: '100%',  height: '100%', radius: '80%', radiusMin: 75, bgDraw: true, bgColor: 'rgba(19, 19, 19, 0.979)', opacityOver: 1.00, opacityOut: 0.05, opacitySpeed: 6, fov: 800, speed: 0.4, fontFamily: 'merienda one, Courier, sans-serif', fontsize: '1.1rem', fontColor: color, fontWeight: '600', fontToUppercase: true, fontStyle: 'normal', fontStretch: 'normal' };
         settingsW =  { entries: entriesW, width: '100%',  height: '100%', radius: '80%', radiusMin: 75, bgDraw: true, bgColor: 'rgba(19, 19, 19, 0.979)', opacityOver: 1.00, opacityOut: 0.05, opacitySpeed: 6, fov: 800, speed: 0.4, fontFamily: 'merienda one, Courier, sans-serif', fontsize: '1.1rem', fontColor: color, fontWeight: '600', fontToUppercase: true, fontStyle: 'normal', fontStretch: 'normal' };
@@ -198,6 +202,8 @@ $(document).ready(function(){
 
     bval.oninput = function(){
         color = `rgb(${rval.value}, ${gval.value}, ${this.value})`;
+        document.documentElement.style.setProperty('--color-primary',color);
+        document.documentElement.style.setProperty('--color-primaryrgba',`${rval.value}, ${gval.value}, ${this.value}`);
         
         settingsL =  { entries: entriesL, width: '100%',  height: '100%', radius: '80%', radiusMin: 75, bgDraw: true, bgColor: 'rgba(19, 19, 19, 0.979)', opacityOver: 1.00, opacityOut: 0.05, opacitySpeed: 6, fov: 800, speed: 0.4, fontFamily: 'merienda one, Courier, sans-serif', fontsize: '1.1rem', fontColor: color, fontWeight: '600', fontToUppercase: true, fontStyle: 'normal', fontStretch: 'normal' };
         settingsW =  { entries: entriesW, width: '100%',  height: '100%', radius: '80%', radiusMin: 75, bgDraw: true, bgColor: 'rgba(19, 19, 19, 0.979)', opacityOver: 1.00, opacityOut: 0.05, opacitySpeed: 6, fov: 800, speed: 0.4, fontFamily: 'merienda one, Courier, sans-serif', fontsize: '1.1rem', fontColor: color, fontWeight: '600', fontToUppercase: true, fontStyle: 'normal', fontStretch: 'normal' };
