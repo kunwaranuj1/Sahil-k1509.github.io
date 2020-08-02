@@ -1,46 +1,69 @@
-@import './Variables/colors';
-
-*, *::before, *::after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: none;
-    scroll-behavior: smooth;
+:root {
+  --color-primary: rgb(0, 204, 153);
+  --color-primaryrgba: 0, 204, 153;
 }
 
-*::selection{
-    color: $white;
-    background-color: $primary;
+@import "./Variables/colors";
+
+@function rgba($args...) {
+  $count: 0;
+  @each $arg in $args {
+    $count: $count + 1;
+  }
+  $colvar: $args;
+  @if (nth($args, 1) == "var(--color-primary)") {
+    $colvar: var(--color-primaryrgba),
+      nth(
+        $list: $args,
+        $n: 2,
+      );
+  }
+  $myvar: "rgba(" + $colvar + ")";
+  @return unquote($string: $myvar);
 }
 
-body{
-    font-size: 62.5%;
-    background-color: rgba(19, 19, 19, 0.979);
-    color: $off-white;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  color: $white;
+  background-color: $primary;
+}
+
+body {
+  font-size: 62.5%;
+  background-color: rgba(19, 19, 19, 0.979);
+  color: $off-white;
 }
 
 ::-webkit-scrollbar {
-    width: 0.7rem;
+  width: 0.7rem;
 }
-  
 
 ::-webkit-scrollbar-track {
-    background: rgba($off-black, 0.9);
+  background: rgba($off-black, 0.9);
 }
 
-::-webkit-scrollbar-thumb{
-    background: rgba($primary, 0.8);
-    border-radius: 1rem;
+::-webkit-scrollbar-thumb {
+  background: rgba($primary, 0.8);
+  border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: $primary;
+  background: $primary;
 }
 
-@import './Animations/animation';
+@import "./Animations/animation";
 
-@import './Components/navbar';
-@import './Components/home';
-@import './Components/about';
-@import './Components/contact';
-@import './Components/project';
+@import "./Components/navbar";
+@import "./Components/home";
+@import "./Components/about";
+@import "./Components/contact";
+@import "./Components/project";
