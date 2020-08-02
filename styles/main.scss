@@ -43,6 +43,8 @@ body {
   color: $off-white;
 }
 
+
+
 ::-webkit-scrollbar {
   width: 0.7rem;
 }
@@ -61,7 +63,6 @@ body {
 }
 
 @import "./Animations/animation";
-
 @import "./Components/navbar";
 @import "./Components/home";
 @import "./Components/about";
