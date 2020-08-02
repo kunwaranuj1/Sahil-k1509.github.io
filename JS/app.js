@@ -286,42 +286,27 @@ $(document).ready(function(){
     });
 
 
+
+    /*
     $('#def-th').click(function(){
         themebtn.classList.remove('shift');
         themeSelector.classList.remove('active');
-
-        body.classList.remove('red');
-        body.classList.remove('blue');
-        body.classList.remove('violet');
-
     });
 
     $('#red-th').click(function(){
         themebtn.classList.remove('shift');
         themeSelector.classList.remove('active');
-        
-        body.classList.add('red');
-        body.classList.remove('blue');
-        body.classList.remove('violet');
     });
 
     $('#blue-th').click(function(){
         themebtn.classList.remove('shift');
         themeSelector.classList.remove('active');
-        
-        body.classList.remove('red');
-        body.classList.add('blue');
-        body.classList.remove('violet');
     });
 
     $('#violet-th').click(function(){
         themebtn.classList.remove('shift');
         themeSelector.classList.remove('active');
-        
-        body.classList.remove('red');
-        body.classList.remove('blue');
-        body.classList.add('violet');
     });
-    
+    */
 
 });
