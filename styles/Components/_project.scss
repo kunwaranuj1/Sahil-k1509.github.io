@@ -14,29 +14,107 @@
 
     .cards-cont{
         display: flex;
+        width: 90%;
+        margin: 0.5rem auto;
+
         @media(max-width: 950px){flex-direction: column;}
         .card-group{
             display: flex;
+            margin: 0.5rem;
+
             @media (min-width: 1800px){width: 33%;}
             @media (max-width: 1800px){flex-direction: column; width: 33%;}
             @media(max-width: 950px){flex-direction: row; width: 100%;}
-            @media(max-width: 650px){flex-direction: column;}
+            @media(max-width: 650px){flex-direction: column; margin: 0;}
 
             .card::-webkit-scrollbar{
                 display: none;
             }
+
+            .card:hover{
+                .card-cover-top{
+                    height: 0;
+                }
+
+                .card-cover-bottom{
+                    height: 0;
+                    top: 100%;
+                }
+
+                .card-cover-image{
+                    height: 0;
+                    width: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+
+                .description{
+                    filter: blur(0);
+                }
+            }
+
             .card{
                 border: 0.1rem solid white;
                 margin: 0.5rem;
-                height: 12rem;
+                height: 15rem;
                 overflow: scroll;
+                position: relative;
+
                 @media (min-width: 1800px){width: 50%;}
                 @media (max-width: 1800px){width: 100%;}
                 @media(max-width: 950px){width: 50%;}
                 @media(max-width: 650px){width: 100%;}
 
+                .card-cover-top{
+                    position: absolute;
+                    z-index: 99;
+                    background-color: rgba($primary, 0.7);
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    clip-path: polygon(0 0, 100% 0, 0 100%);
+                    transition: all ease 1s 0.3s;
+                }
+
+                .card-cover-bottom{
+                    position: absolute;
+                    z-index: 99;
+                    background-color: rgba($primary, 0.7);
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    transform-origin: 50% 50%;
+                    transform: rotateX(180deg);
+                    clip-path: polygon(0 0, 100% 0, 100% 100%);
+                    transition: all ease 1s 0.3s;
+                }
+
+                .card-cover-image{
+                    position: absolute;
+                    z-index: 100;
+                    background-color: none;
+                    width: 70%;
+                    height: 70%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: all ease 0.8s;
+                    opacity: 1;
+                    visibility: visible;
+                    border: 0.1rem solid $black;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
                 
                 .description{
+                    filter: blur(0.3rem);
+
                     .heading{
                         text-align: center;
                         font-size: 1.2rem;
@@ -50,7 +128,7 @@
                         border: 0.1rem solid grey;
                         margin: 0.5rem;
                         text-align: justify;
-                        height: 6rem;
+                        height: 8rem;
                         overflow: scroll;
                         padding: 0.5rem;
                         font-size: 0.7rem;
