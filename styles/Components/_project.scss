@@ -32,6 +32,8 @@
             }
 
             .card:hover{
+                overflow: scroll;
+                
                 .card-cover-top{
                     height: 0;
                 }
@@ -57,7 +59,7 @@
                 border: 0.1rem solid white;
                 margin: 0.5rem;
                 height: 15rem;
-                overflow: scroll;
+                overflow: hidden;
                 position: relative;
 
                 @media (min-width: 1800px){width: 50%;}
