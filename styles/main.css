@@ -2163,10 +2163,6 @@ body .theme-selector.active {
   }
 }
 
-#project .cards-cont .card-group .card::-webkit-scrollbar {
-  display: none;
-}
-
 #project .cards-cont .card-group .card:hover .card-cover-top {
   height: 0;
 }
@@ -2183,16 +2179,19 @@ body .theme-selector.active {
   visibility: hidden;
 }
 
+#project .cards-cont .card-group .card:hover .description::-webkit-scrollbar {
+  display: none;
+}
+
 #project .cards-cont .card-group .card:hover .description {
   -webkit-filter: blur(0);
           filter: blur(0);
+  overflow: scroll;
 }
 
 #project .cards-cont .card-group .card {
   border: 0.1rem solid white;
   margin: 0.5rem;
-  height: 15rem;
-  overflow: scroll;
   position: relative;
 }
 
@@ -2277,6 +2276,8 @@ body .theme-selector.active {
 #project .cards-cont .card-group .card .description {
   -webkit-filter: blur(0.3rem);
           filter: blur(0.3rem);
+  height: 15rem;
+  overflow: hidden;
 }
 
 #project .cards-cont .card-group .card .description .heading {
