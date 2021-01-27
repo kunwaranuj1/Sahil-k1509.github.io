@@ -1,8 +1,8 @@
-This is my portfolio source code.
-
+This is my portfolio source code.    
+     
 Contributors: 
-## Sahil-k1509 
-(Main Developer)
-and 
-## Adityaag121 
-(Helped in extending the functionality of theme slider to change the entire page's colour scheme rather than just changing the SVG Cloud.)
+__Sahil-k1509__      
+(Main Developer)       
+and       
+__Adityaag121__       
+(Helped in extending the functionality of theme slider)
