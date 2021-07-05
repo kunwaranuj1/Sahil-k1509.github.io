@@ -1,0 +1,35 @@
+<div class="main-cont">
+    <div class="home-text">
+        <div class="name">
+            <span>S</span>
+            <span>a</span>
+            <span>h</span>
+            <span>i</span>
+            <span>l</span>
+            <span>&nbsp;</span>
+            <span>K</span>
+            <span>u</span>
+            <span>m</span>
+            <span>a</span>
+            <span>r</span>
+            <span>&nbsp;</span>
+            <span>B</span>
+            <span>a</span>
+            <span>i</span>
+            <span>r</span>
+            <span>a</span>
+            <span>g</span>
+            <span>i</span>
+        </div>
+        <div class="intro">I am a </div>
+        <div class="checkprojects"><a href="#project" class='proj-link'>Check out my projects</a></div>
+
+        <div class="quote-pc">“ Perfection is achieved not when there is nothing more to add, <br> but rather when there is nothing more to take away.” <br> – Antoine de Saint-Exupery</div>
+    </div>
+
+    <div class="image-card">
+        <img src="./Media/me1.jpg" alt="me" class='front-card'>
+        <img src="./Media/me2.jpg" alt="me" class='back-card'>
+    </div>
+</div>
+<div class="quote-mob">“ Perfection is achieved not when there is nothing more to add, <br> but rather when there is nothing more to take away.” <br><span>– Antoine de Saint-Exupery</span></div>

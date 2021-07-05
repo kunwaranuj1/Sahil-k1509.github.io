@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahil</title>
+    <title>Sahil Bairagi</title>
     <link rel="shortcut icon" href="./Media/logo.png" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Lobster&family=Merienda+One&display=swap" rel="stylesheet">
@@ -38,6 +38,7 @@
 
         <nav class="nav-bar" id="nav-bar">    
             <ul class="nav-list">
+
                 <a href="#home" class="nav-link" style="border-bottom-left-radius: 3rem;">
                     <li class="nav-list-item" style="border-bottom-left-radius: 3rem;">
                         <i class="fa fa-home"></i> 
@@ -50,32 +51,32 @@
                             <i class="fa fa-info-circle"></i> 
                             <span class="nav-label">About</span>
                     </li>
-                </a>
-
-                <a href="#project" class="nav-link">
-                    <li class="nav-list-item">
-                            <i class="fa fa-code"></i> 
-                            <span class="nav-label">Projects</span>
-                    </li>
-                </a>
+                </a>     
+                
+                <li class="nav-list-item" id='bg-switcher'>
+                    <div class="wrapper">
+                        <i class="fa fa-refresh fa-spin"></i>
+                    </div>
+                </li>
 
                 <li class="nav-list-item nav-more">
                         <i class="fa fa-ellipsis-h"></i> 
                         <span class="nav-label">More</span>
 
                     <ul class="nav-more-list">
+                        <a href="#project" class="nav-link">        
+                            <li class="nav-more-item">
+                                    <i class="fa fa-rocket"></i> 
+                                    <span class="nav-label">Projects</span>
+                            </li>
+                        </a>
+
                         <a href="#contact" class="nav-link">
                             <li class="nav-more-item">
                                     <i class="fa fa-address-book-o"></i> 
                                     <span class="nav-label">Contact</span>
                             </li>
-                        </a>
-                        <a href="#" class="nav-link">        
-                            <li class="nav-more-item">
-                                    <i class="fa fa-rocket"></i> 
-                                    <span class="nav-label">Explore me</span>
-                            </li>
-                        </a>
+                        </a>    
                     </ul>
                 </li>
             </ul>
@@ -83,42 +84,52 @@
     </header>
 
     <main>
-        <div id="home">
-            <div class="main-cont">
-                <div class="home-text">
+        <div id="home" class=" ">
+            <canvas id="canvas1"></canvas>
+            
+            <div class="content" id='text-content-home'>
+                <div class="text">
                     <div class="name">
-                        <span>S</span>
-                        <span>a</span>
-                        <span>h</span>
-                        <span>i</span>
-                        <span>l</span>
-                        <span>&nbsp;</span>
-                        <span>K</span>
-                        <span>u</span>
-                        <span>m</span>
-                        <span>a</span>
-                        <span>r</span>
-                        <span>&nbsp;</span>
-                        <span>B</span>
-                        <span>a</span>
-                        <span>i</span>
-                        <span>r</span>
-                        <span>a</span>
-                        <span>g</span>
-                        <span>i</span>
+                        <div class="svg-container">
+                            <svg id="name" width="724" height="52" viewBox="0 0 724 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="s" d="M18.4395 28.8174C12.8112 27.1995 8.70964 25.2171 6.13477 22.8701C3.58268 20.5003 2.30664 17.5837 2.30664 14.1201C2.30664 10.2008 3.86751 6.96517 6.98926 4.41309C10.1338 1.83822 14.2126 0.550781 19.2256 0.550781C22.6436 0.550781 25.6855 1.21159 28.3516 2.5332C31.0404 3.85482 33.1139 5.67773 34.5723 8.00195C36.0534 10.3262 36.7939 12.8669 36.7939 15.624H30.1973C30.1973 12.6162 29.2402 10.2578 27.3262 8.54883C25.4121 6.81706 22.7119 5.95117 19.2256 5.95117C15.9899 5.95117 13.4606 6.66895 11.6377 8.10449C9.83757 9.51725 8.9375 11.4883 8.9375 14.0176C8.9375 16.0456 9.79199 17.766 11.501 19.1787C13.2327 20.5687 16.1608 21.8447 20.2852 23.0068C24.4323 24.1689 27.668 25.4564 29.9922 26.8691C32.3392 28.2591 34.071 29.8883 35.1875 31.7568C36.3268 33.6253 36.8965 35.8242 36.8965 38.3535C36.8965 42.3867 35.3242 45.6224 32.1797 48.0605C29.0352 50.4759 24.8311 51.6836 19.5674 51.6836C16.1494 51.6836 12.9593 51.0342 9.99707 49.7354C7.03483 48.4137 4.74479 46.6136 3.12695 44.335C1.5319 42.0563 0.734375 39.4701 0.734375 36.5762H7.33105C7.33105 39.584 8.4362 41.9652 10.6465 43.7197C12.8796 45.4515 15.8532 46.3174 19.5674 46.3174C23.0309 46.3174 25.6855 45.611 27.5312 44.1982C29.377 42.7855 30.2998 40.86 30.2998 38.4219C30.2998 35.9837 29.4453 34.1038 27.7363 32.7822C26.0273 31.4378 22.9284 30.1162 18.4395 28.8174Z" stroke="white" stroke-width="2"/>
+                                <path id="a" d="M72.8193 38.0117H51.9697L47.2871 51H40.5195L59.5234 1.23438H65.2656L84.3037 51H77.5703L72.8193 38.0117ZM53.9521 32.6113H70.8711L62.3945 9.33496L53.9521 32.6113Z" stroke="white" stroke-width="2"/>
+                                <path id="h" d="M129.25 51H122.653V27.9971H97.5654V51H91.0029V1.23438H97.5654V22.6309H122.653V1.23438H129.25V51Z" stroke="white" stroke-width="2"/>
+                                <path id="i" d="M147.946 51H141.384V1.23438H147.946V51Z" stroke="white" stroke-width="2"/>
+                                <path id="l" d="M166.574 45.6338H190.158V51H159.978V1.23438H166.574V45.6338Z" stroke="white" stroke-width="2"/>
+                                <path id="k" d="M227.653 27.8604L221.569 34.1836V51H215.007V1.23438H221.569V25.8438L243.684 1.23438H251.613L232.028 23.2119L253.151 51H245.29L227.653 27.8604Z" stroke="white" stroke-width="2"/>
+                                <path id="u" d="M293.928 1.23438V35.0723C293.905 39.7663 292.424 43.6058 289.484 46.5908C286.568 49.5758 282.603 51.2507 277.59 51.6152L275.847 51.6836C270.401 51.6836 266.06 50.2139 262.824 47.2744C259.589 44.335 257.948 40.2904 257.902 35.1406V1.23438H264.396V34.9355C264.396 38.5358 265.388 41.3385 267.37 43.3438C269.353 45.3262 272.178 46.3174 275.847 46.3174C279.561 46.3174 282.398 45.3262 284.357 43.3438C286.34 41.3613 287.331 38.57 287.331 34.9697V1.23438H293.928Z" stroke="white" stroke-width="2"/>
+                                <path id="m" d="M312.761 1.23438L329.03 41.8398L345.3 1.23438H353.811V51H347.248V31.6201L347.863 10.7021L331.525 51H326.501L310.197 10.8047L310.847 31.6201V51H304.284V1.23438H312.761Z" stroke="white" stroke-width="2"/>
+                                <path id="a2" d="M393.493 38.0117H372.644L367.961 51H361.193L380.197 1.23438H385.939L404.978 51H398.244L393.493 38.0117ZM374.626 32.6113H391.545L383.068 9.33496L374.626 32.6113Z" stroke="white" stroke-width="2"/>
+                                <path id="r" d="M429.929 30.8682H418.239V51H411.643V1.23438H428.117C433.723 1.23438 438.029 2.51042 441.037 5.0625C444.068 7.61458 445.583 11.3288 445.583 16.2051C445.583 19.304 444.74 22.0042 443.054 24.3057C441.39 26.6071 439.066 28.3275 436.081 29.4668L447.771 50.5898V51H440.729L429.929 30.8682ZM418.239 25.502H428.322C431.581 25.502 434.167 24.6589 436.081 22.9727C438.018 21.2865 438.986 19.0306 438.986 16.2051C438.986 13.1289 438.063 10.7705 436.218 9.12988C434.395 7.48926 431.752 6.65755 428.288 6.63477H418.239V25.502Z" stroke="white" stroke-width="2"/>
+                                <path id="b" d="M472.175 51V1.23438H488.444C493.845 1.23438 497.901 2.35091 500.612 4.58398C503.347 6.81706 504.714 10.1211 504.714 14.4961C504.714 16.8203 504.053 18.8825 502.731 20.6826C501.41 22.46 499.61 23.8385 497.331 24.8184C500.02 25.5703 502.139 27.0059 503.688 29.125C505.261 31.2214 506.047 33.7279 506.047 36.6445C506.047 41.1107 504.6 44.6198 501.706 47.1719C498.812 49.724 494.722 51 489.436 51H472.175ZM478.737 27.7236V45.6338H489.572C492.626 45.6338 495.03 44.8477 496.784 43.2754C498.562 41.6803 499.45 39.4928 499.45 36.7129C499.45 30.7201 496.192 27.7236 489.675 27.7236H478.737ZM478.737 22.46H488.649C491.521 22.46 493.811 21.7422 495.52 20.3066C497.251 18.8711 498.117 16.9229 498.117 14.4619C498.117 11.7275 497.32 9.74512 495.725 8.51465C494.13 7.26139 491.703 6.63477 488.444 6.63477H478.737V22.46Z" stroke="white" stroke-width="2"/>
+                                <path id="a3" d="M543.269 38.0117H522.419L517.736 51H510.969L529.973 1.23438H535.715L554.753 51H548.02L543.269 38.0117ZM524.401 32.6113H541.32L532.844 9.33496L524.401 32.6113Z" stroke="white" stroke-width="2"/>
+                                <path id="i2" d="M568.493 51H561.931V1.23438H568.493V51Z" stroke="white" stroke-width="2"/>
+                                <path id="r2" d="M598.776 30.8682H587.087V51H580.49V1.23438H596.965C602.57 1.23438 606.877 2.51042 609.885 5.0625C612.915 7.61458 614.431 11.3288 614.431 16.2051C614.431 19.304 613.588 22.0042 611.901 24.3057C610.238 26.6071 607.914 28.3275 604.929 29.4668L616.618 50.5898V51H609.577L598.776 30.8682ZM587.087 25.502H597.17C600.428 25.502 603.015 24.6589 604.929 22.9727C606.866 21.2865 607.834 19.0306 607.834 16.2051C607.834 13.1289 606.911 10.7705 605.065 9.12988C603.243 7.48926 600.599 6.65755 597.136 6.63477H587.087V25.502Z" stroke="white" stroke-width="2"/>
+                                <path id="a4" d="M651.14 38.0117H630.29L625.607 51H618.84L637.844 1.23438H643.586L662.624 51H655.891L651.14 38.0117ZM632.272 32.6113H649.191L640.715 9.33496L632.272 32.6113Z" stroke="white" stroke-width="2"/>
+                                <path id="g" d="M705.656 44.4717C703.97 46.887 701.612 48.6986 698.581 49.9062C695.573 51.0911 692.064 51.6836 688.054 51.6836C683.998 51.6836 680.397 50.738 677.253 48.8467C674.108 46.9326 671.67 44.221 669.938 40.7119C668.229 37.2028 667.352 33.1354 667.307 28.5098V24.1689C667.307 16.6722 669.05 10.8617 672.536 6.7373C676.045 2.61296 680.967 0.550781 687.302 0.550781C692.497 0.550781 696.678 1.88379 699.846 4.5498C703.013 7.19303 704.95 10.9528 705.656 15.8291H699.094C697.863 9.24381 693.944 5.95117 687.336 5.95117C682.938 5.95117 679.6 7.50065 677.321 10.5996C675.065 13.6758 673.926 18.1419 673.903 23.998V28.0654C673.903 33.6481 675.179 38.0915 677.731 41.3955C680.284 44.6768 683.736 46.3174 688.088 46.3174C690.549 46.3174 692.702 46.0439 694.548 45.4971C696.394 44.9502 697.92 44.0273 699.128 42.7285V31.5518H687.609V26.2197H705.656V44.4717Z" stroke="white" stroke-width="2"/>
+                                <path id="i3" d="M723.669 51H717.106V1.23438H723.669V51Z" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </div> 
                     </div>
-                    <div class="intro">I am a </div>
-                    <div class="checkprojects"><a href="#project" class='proj-link'>Check out my projects</a></div>
+                    
+                    <div class="wrapper">
+                        <div class="static-txt">I am a</div>
+                        <ul class="dynamic-txts">
+                            <li><span>Student</span></li>
+                            <li><span>Competitive Programmer</span></li>
+                            <li><span>Chess Player</span></li>
+                            <li><span>Developer</span></li>
+                            <li><span>Speed Cuber</span></li>
+                        </ul>
+                    </div>
 
-                    <div class="quote-pc">“ Perfection is achieved not when there is nothing more to add, <br> but rather when there is nothing more to take away.” <br> – Antoine de Saint-Exupery</div>
-                </div>
-
-                <div class="image-card">
-                    <img src="./Media/me1.jpg" alt="me" class='front-card'>
-                    <img src="./Media/me2.jpg" alt="me" class='back-card'>
+                    <div class="resume">
+                        <a class='cv-link' href="./CV.pdf">CV</a>
+                        <a class='cv-link' href="#project">Projects</a>
+                    </div>
                 </div>
             </div>
-            <div class="quote-mob">“ Perfection is achieved not when there is nothing more to add, <br> but rather when there is nothing more to take away.” <br><span>– Antoine de Saint-Exupery</span></div>
         </div>
 
 

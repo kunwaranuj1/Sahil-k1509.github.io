@@ -131,7 +131,6 @@
                 width: 100%;
             }
 
-
             .fa{ 
                 color: $primary;
                 font-size: 1.2rem;
@@ -187,10 +186,22 @@
                 }
             }
         }
+
         .nav-more:hover{
             .nav-more-list{
                 visibility: visible;
                 opacity: 1;
+            }
+        }
+    }
+
+    #bg-switcher.switched{
+        .wrapper{
+            .fa-spin{
+                text-shadow: 0 0 0.2rem $primary,
+                            0 0 1.2rem $primary,
+                            0 0 1.5rem $primary,
+                            0 0 1.5rem $primary;
             }
         }
     }

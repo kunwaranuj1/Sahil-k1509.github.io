@@ -39,7 +39,7 @@
 
 body {
   font-size: 62.5%;
-  background-color: rgba(19, 19, 19, 0.979);
+  background-color: rgba(19, 19, 19);
   color: $off-white;
 
   .theme-btn{
@@ -172,7 +172,8 @@ body {
 
 @import "./Animations/animation";
 @import "./Components/navbar";
-@import "./Components/home";
+// @import "./Components/home";
+@import "./Components/new_home";
 @import "./Components/about";
 @import "./Components/contact";
 @import "./Components/project";
