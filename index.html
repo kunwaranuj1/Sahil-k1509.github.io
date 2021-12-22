@@ -53,21 +53,22 @@
                     </li>
                 </a>     
                 
-                <li class="nav-list-item" id='bg-switcher'>
-                    <div class="wrapper">
-                        <i class="fa fa-refresh fa-spin"></i>
-                    </div>
-                </li>
+                <a href="#project" class="nav-link">        
+                    <li class="nav-list-item">
+                            <i class="fa fa-rocket"></i> 
+                            <span class="nav-label">Projects</span>
+                    </li>
+                </a>
 
                 <li class="nav-list-item nav-more">
                         <i class="fa fa-ellipsis-h"></i> 
                         <span class="nav-label">More</span>
 
                     <ul class="nav-more-list">
-                        <a href="#project" class="nav-link">        
+                        <a href="#chess" class="nav-link">        
                             <li class="nav-more-item">
-                                    <i class="fa fa-rocket"></i> 
-                                    <span class="nav-label">Projects</span>
+                                    <i class="fa fa-lightbulb-o"></i> 
+                                    <span class="nav-label">Chess</span>
                             </li>
                         </a>
 
@@ -76,7 +77,14 @@
                                     <i class="fa fa-address-book-o"></i> 
                                     <span class="nav-label">Contact</span>
                             </li>
-                        </a>    
+                        </a>   
+
+                        <li class="nav-more-item" id='bg-switcher'>
+                            <div class="wrapper">
+                                <i class="fa fa-refresh fa-spin"></i>
+                                <span class="nav-label">Dots</span>
+                            </div>
+                        </li> 
                     </ul>
                 </li>
             </ul>
@@ -312,6 +320,37 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="project-more">
+                <a href="https://github.com/Sahil-k1509">More on github</a>
+            </div>
+        </div>
+
+        <div id="chess">
+            <h1 class="chess-head">chess gallery</h1>
+
+            <div class="game-selector">
+                <div class="btn-cont">
+                    <div class="game-btn">Game 1</div>
+                    <input type="radio" value="1" name="gameno" id="g1" class="game-rad">
+                </div>
+                <div class="btn-cont">
+                    <div class="game-btn">Game 2</div>
+                    <input type="radio" value="2" name="gameno" id="g2" class="game-rad">
+                </div>
+                <div class="btn-cont">
+                    <div class="game-btn">Game 3</div>
+                    <input type="radio" value="3" name="gameno" id="g3" class="game-rad">
+                </div>
+                <div class="btn-cont">
+                    <div class="game-btn">Game 4</div>
+                    <input type="radio" value="4" name="gameno" id="g4" class="game-rad">
+                </div>
+            </div>
+
+            <div class="game-box" id="game-box">
+                 <span></span>
             </div>
         </div>
 

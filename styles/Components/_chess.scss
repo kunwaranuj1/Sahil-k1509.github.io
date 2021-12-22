@@ -1,0 +1,70 @@
+#chess {
+    font-family: 'merienda one';
+
+    .chess-head{
+        font-size: 2rem; 
+        text-align: center;
+        border-top: 0.1rem solid $white;
+        border-bottom: 0.1rem solid $white;
+        width: 80%;
+        margin: 2rem auto;
+        padding: 0.6rem;
+        text-transform: capitalize;
+        
+    }
+
+    .game-selector{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .btn-cont{
+            border: 0.2rem solid $primary;
+            position: relative;
+            width: 5rem;
+            height: 5rem;
+            margin: 1rem;
+            border-radius: 1rem;
+            transition: all ease 0.5s;
+
+            .game-rad{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+            
+            .game-btn{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+            }
+        }
+
+        .btn-cont:hover{
+            box-shadow: 0 0 1rem $primary;
+        }
+    }
+
+    .game-box{
+        margin: 1rem auto 2rem auto;
+        width: 60%;
+        height: 60%;
+        max-width: 40rem;
+        max-height: 40rem;
+        border: 0.2rem solid $primary;
+
+        .game-window{
+            padding: 1rem;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
